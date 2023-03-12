@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Rubik', sans-serif;
+}
+
+main {
+	height: calc(100vh - 20px);
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: repeat(2, 250px);
+	gap: 30px;
+	justify-content: center;
+	align-content: center;
+	background-color: hsl(226, 43%, 10%); /*very dark blue*/
+}
+
+footer {
+	height: 20px;
+	font-size: 0.6em;
+	text-align: center;
+	background-color: hsl(226, 43%, 10%); /*very dark blue*/
+	color:hsl(236, 100%, 87%); /*pale blue*/
+}
+
+footer a {
+	color: hsl(228, 45%, 44%);
+	font-size: 0.8rem;
+}
+
+header {
+	background-color: hsl(235, 46%, 20%); /*dark blue*/
+	border-radius: 20px;
+}
+
+header .person {
+	background-color: hsl(246, 80%, 60%); /*blue*/
+	color: white;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.person img {
+	width: 80px;
+	height: 80px;
+	border: 3px solid white;
+	border-radius: 50%;
+}
+
+.person p {
+	color: hsl(236, 100%, 87%); /*pale blue*/
+	margin: 40px 0 10px;
+	font-size: 0.9em;
+}
+
+.person h1 {
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+nav {
+	padding: 30px;
+}
+
+nav button {
+	display: block;
+	background-color: transparent;
+	border: none;
+	color: hsl(236, 100%, 87%); /*pale blue*/
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+nav button:hover {
+	color: white;
+}
+
+.active {
+	color: white
+}
+
+.card {
+	position: relative;
+	border-radius: 20px;
+	overflow:hidden;
+}
+.innerCard {
+	border-radius: 20px;
+	background-color: hsl(235, 46%, 20%); /*dark blue*/
+	position: absolute;
+	bottom: 0;
+	height: 80%;
+	width: 100%;
+	padding: 30px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.innerCard:hover {
+	background-color:hsl(235, 45%, 36%); /*desaturated blue, darker*/
+	cursor: pointer;
+}
+
+.card img {
+	position: absolute;
+	right: 10px;
+	top: -10px;
+}
+
+.card.exercise img {
+	top: 0;
+}
+
+header {
+	grid-area: 1 / 1 / 3 / 2;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.title img {
+	position: relative;
+	top: -5px;
+	left: 0;
+	height: auto;
+}
+
+.title h2 {
+	font-weight: 500;
+}
+
+.work {
+	background-color: hsl(15, 100%, 70%); /*light red*/
+}
+
+.play {
+	background-color: hsl(195, 74%, 62%); /*soft blue*/
+}
+
+.study {
+	background-color: hsl(348, 100%, 68%); /*light red*/
+}
+
+.exercise {
+	background-color: hsl(145, 58%, 55%); /*lime green*/
+}
+
+.social {
+	background-color: hsl(264, 64%, 52%); /*violet*/
+}
+
+.selfCare {
+	background-color: hsl(43, 84%, 65%); /*soft orange*/
+}
+
+.current {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.previous {
+	font-size: 0.9em;
+	color:hsl(236, 100%, 87%) /*pale blue*/
+}
